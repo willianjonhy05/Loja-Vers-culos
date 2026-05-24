@@ -33,7 +33,7 @@ O site permite que o usuário visualize produtos, escolha tamanhos, adicione ite
 
 ## 📁 Estrutura do projeto
 
-```text
+```
 loja-versiculos/
 ├── index.html
 ├── produtos.html
@@ -45,6 +45,7 @@ loja-versiculos/
 │   └── script.js
 └── img/
     └── imagens-do-projeto
+´´´
 
 
 ## 🛒 Como funciona o pedido
@@ -74,7 +75,7 @@ O projeto foi pensado para funcionar em diferentes tamanhos de tela, com foco es
 
 O carrinho gera uma mensagem automática com:
 
--Nome do cliente
+- Nome do cliente
 - E-mail
 - Produtos escolhidos
 - Tamanhos
