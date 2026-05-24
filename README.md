@@ -45,7 +45,7 @@ loja-versiculos/
 │   └── script.js
 └── img/
     └── imagens-do-projeto
-´´´
+```
 
 
 ## 🛒 Como funciona o pedido
