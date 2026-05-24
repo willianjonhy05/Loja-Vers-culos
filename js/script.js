@@ -20,6 +20,10 @@ async function initApp() {
         if(document.getElementById('featured-products')) renderProducts(allProducts.slice(0, 3), 'featured-products');
         if(document.getElementById('catalog-grid')) renderProducts(allProducts, 'catalog-grid');
         if(document.getElementById('cart-items-list')) renderCart();
+        if (document.getElementById("products-by-category")) {
+            renderProductsByCategory(allProducts, "products-by-category");
+        }
+
         
         // Listeners
         const checkoutForm = document.getElementById('checkout-form');
@@ -187,3 +191,90 @@ function handleCheckout(e) {
     if (anoEl) {
         anoEl.textContent = new Date().getFullYear();
     }
+
+
+function renderProductsByCategory(products, containerId) {
+    const container = document.getElementById(containerId);
+
+    if (!container) return;
+
+    const categoryNames = {
+        devocional: "Linha Devocional",
+        mariana: "Estampas Marianas",
+        "bem-aventurancas": "Bem-Aventurados"
+    };
+
+    const categories = {};
+
+    products.forEach(product => {
+        if (!categories[product.categoria]) {
+            categories[product.categoria] = [];
+        }
+
+        categories[product.categoria].push(product);
+    });
+
+    container.innerHTML = Object.keys(categories).map(categoryKey => {
+        const categoryProducts = categories[categoryKey].slice(0, 4);
+
+        return `
+            <div class="category-block">
+                <h3 class="category-title">
+                    ${categoryNames[categoryKey] || categoryKey}
+                </h3>
+
+                <div class="product-grid">
+                    ${categoryProducts.map(product => `
+                        <div class="product-card">
+                            <img 
+                                src="${product.imagem_url}" 
+                                class="product-img" 
+                                alt="${product.nome}"
+                            >
+
+                            <div class="product-info">
+                                <p class="product-category">
+                                    ${categoryNames[product.categoria] || product.categoria}
+                                </p>
+
+                                <h4 class="product-name">${product.nome}</h4>
+
+                                <p class="product-meta">
+                                    ${product.codigo} | ${product.cor}
+                                </p>
+
+                                <p class="product-meta">
+                                    ${product.material}
+                                </p>
+
+                                <div class="product-sizes">
+                                    <label for="size-${product.id}">
+                                        Tamanho:
+                                    </label>
+
+                                    <select id="size-${product.id}">
+                                        <option value="">Selecione</option>
+                                        ${product.tamanhos_disponiveis.map(size => `
+                                            <option value="${size}">${size}</option>
+                                        `).join("")}
+                                    </select>
+                                </div>
+
+                                <p class="product-price">
+                                    R$ ${product.preco.toFixed(2).replace(".", ",")}
+                                </p>
+
+                                <button 
+                                    class="btn-buy" 
+                                    onclick="addToCart(${product.id})"
+                                >
+                                    Adicionar ao Carrinho
+                                </button>
+                            </div>
+                        </div>
+                    `).join("")}
+                </div>
+            </div>
+        `;
+    }).join("");
+}

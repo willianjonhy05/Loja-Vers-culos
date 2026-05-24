@@ -408,6 +408,111 @@ a {
     margin-bottom: 15px;
 }
 
+/* --- SOBRE A MARCA --- */
+.about {
+    padding: 90px 0;
+    background: var(--bg-secondary);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.section-tag {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: var(--accent-gold);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.about-text p {
+    color: var(--text-muted);
+    font-size: 16px;
+    max-width: 720px;
+    margin-bottom: 18px;
+}
+
+.about-highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin: 35px 0;
+}
+
+.about-highlights div {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    padding: 22px;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+}
+
+.about-highlights strong {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-main);
+    font-size: 15px;
+}
+
+.about-highlights span {
+    display: block;
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.about-card {
+    background: var(--bg-dark);
+    color: white;
+    padding: 40px;
+    border-radius: 22px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-card::before {
+    content: "VS";
+    position: absolute;
+    right: -10px;
+    bottom: -30px;
+    font-size: 110px;
+    font-weight: 900;
+    color: rgba(255,255,255,0.05);
+}
+
+.about-card h3 {
+    color: var(--accent-gold);
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.about-card p {
+    color: #ddd;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card {
+        padding: 32px;
+    }
+}
+
 .btn-buy {
     width: 100%;
     padding: 12px;
@@ -448,17 +553,90 @@ a {
 }
 
 /* --- HOW IT WORKS --- */
-.how-it-works { padding: 60px 0; }
-.step-card {
-    text-align: center;
-    padding: 30px;
-    border-bottom: 1px solid #eee;
+/* --- COMO FUNCIONA --- */
+.how-it-works {
+    padding: 80px 0;
+    background: var(--bg-secondary);
 }
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 45px;
+}
+
+.step-card {
+    position: relative;
+    background: var(--bg-primary);
+    text-align: center;
+    padding: 42px 28px;
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.step-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent-gold);
+}
+
 .step-number {
-    font-size: 40px;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-dark);
+    color: var(--accent-gold);
+    border-radius: 50%;
+    font-size: 22px;
     font-weight: 800;
-    color: #eee;
-    display: block;
+}
+
+.step-card h4 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: var(--text-main);
+}
+
+.step-card p {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .step-card {
+        padding: 34px 24px;
+    }
+}
+
+
+
+.category-block {
+    margin-top: 50px;
+}
+
+.category-block:first-child {
+    margin-top: 40px;
+}
+
+.product-sizes select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid var(--border-color);
+    background: white;
+    font-family: inherit;
 }
 /* --- FOOTER --- */
 .footer {
@@ -613,5 +791,139 @@ a {
     .footer-grid {
         flex-direction: row;
         justify-content: space-between;
+    }
+}
+
+
+
+/* --- SEÇÃO CAMISAS PERSONALIZADAS --- */
+.custom-shirts {
+    background-color: var(--bg-dark);
+    padding: 80px 20px;
+    color: var(--bg-primary);
+    font-family: 'Inter', sans-serif;
+}
+
+.custom-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.custom-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.custom-title {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.gold-text {
+    color: var(--accent-gold);
+    display: block; /* Força quebra no mobile para ênfase */
+}
+
+.custom-subtitle {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Grid Mobile-First */
+.benefits-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.benefit-card {
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.benefit-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+    color: var(--accent-gold);
+}
+
+.benefit-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.benefit-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+    color: var(--bg-primary);
+    font-weight: 600;
+}
+
+.benefit-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Botão de Ação */
+.custom-actions {
+    text-align: center;
+}
+
+.btn-custom-gold {
+    display: inline-block;
+    background-color: var(--accent-gold);
+    color: #000; /* Texto preto sobre dourado para contraste premium */
+    padding: 18px 36px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    border: 1px solid var(--accent-gold);
+}
+
+.btn-custom-gold:hover {
+    background-color: transparent;
+    color: var(--accent-gold);
+    transform: translateY(-3px);
+}
+
+/* Media Query para Desktop (Telas acima de 768px) */
+@media (min-width: 768px) {
+    .custom-shirts {
+        padding: 120px 20px;
+    }
+
+    .custom-title {
+        font-size: 2.8rem;
+    }
+
+    .gold-text {
+        display: inline; /* Volta ao fluxo normal no desktop */
+    }
+
+    .benefits-grid {
+        flex-direction: row; /* Transforma em colunas */
+        justify-content: space-between;
+    }
+
+    .benefit-card {
+        flex: 1;
+    }
+
+    .benefit-card:hover {
+        transform: translateY(-10px);
     }
 }

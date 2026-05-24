@@ -2,61 +2,157 @@
   {
     "id": 1,
     "nome": "Camisa São Bento Minimalista",
+    "categoria": "devocional",
     "material": "100% Algodão Fio 30.1 Penteado",
     "codigo": "VS-001",
     "cor": "Preto",
     "tamanhos_disponiveis": ["P", "M", "G", "GG"],
     "preco": 89.9,
-    "imagem_url": "https://placehold.co/600x800/111111/C5A059?text=São+Bento"
+    "imagem_url": "https://placehold.co/600x800/111111/C5A059?text=São+Bento",
+    "descricao": "Camisa de alta qualidade com estampa minimalista de São Bento, perfeita para quem busca estilo e proteção divina."
   },
   {
     "id": 2,
     "nome": "Camisa Totus Tuus",
+    "categoria": "mariana",
     "material": "100% Algodão Fio 30.1 Penteado",
     "codigo": "VS-002",
     "cor": "Off-White",
     "tamanhos_disponiveis": ["P", "M", "G"],
     "preco": 79.9,
-    "imagem_url": "https://placehold.co/600x800/F9F9F9/111111?text=Totus+Tuus"
+    "imagem_url": "https://placehold.co/600x800/F9F9F9/111111?text=Totus+Tuus",
+    "descricao": "Camisa inspirada na devoção mariana, com estampa elegante e confortável, ideal para expressar sua fé com estilo."
   },
   {
     "id": 3,
     "nome": "Camisa Kyrie Eleison",
+    "categoria": "devocional",
     "material": "Malha Premium Lavada",
     "codigo": "VS-003",
     "cor": "Cinza Chumbo",
     "tamanhos_disponiveis": ["M", "G", "GG"],
     "preco": 84.9,
-    "imagem_url": "https://placehold.co/600x800/333333/FFFFFF?text=Kyrie+Eleison"
+    "imagem_url": "https://placehold.co/600x800/333333/FFFFFF?text=Kyrie+Eleison",
+    "descricao": "Camisa com estampa inspirada na oração 'Kyrie Eleison', feita com malha premium para garantir conforto e durabilidade."
   },
   {
     "id": 4,
     "nome": "Camisa Sagrada Família",
+    "categoria": "devocional",
     "material": "100% Algodão Fio 30.1 Penteado",
     "codigo": "VS-004",
     "cor": "Branco",
     "tamanhos_disponiveis": ["P", "M", "G", "GG"],
     "preco": 89.9,
-    "imagem_url": "https://placehold.co/600x800/FFFFFF/111111?text=Sagrada+Familia"
+    "imagem_url": "https://placehold.co/600x800/FFFFFF/111111?text=Sagrada+Familia",
+    "descricao": "Camisa com estampa da Sagrada Família, perfeita para quem deseja vestir sua fé com elegância e conforto."    
   },
   {
     "id": 5,
     "nome": "Camisa Espírito Santo",
+    "categoria": "devocional",
     "material": "Penteado Especial",
     "codigo": "VS-005",
     "cor": "Bege Areia",
     "tamanhos_disponiveis": ["P", "G"],
     "preco": 79.9,
-    "imagem_url": "https://placehold.co/600x800/E5D3B3/111111?text=Divino+Espírito"
+    "imagem_url": "https://placehold.co/600x800/E5D3B3/111111?text=Divino+Espírito",
+    "descricao": "Camisa inspirada na devoção ao Espírito Santo, com estampa simbólica e tecido confortável."
   },
   {
     "id": 6,
     "nome": "Camisa São Miguel Arcanjo",
+    "categoria": "devocional",
     "material": "100% Algodão Fio 30.1 Penteado",
     "codigo": "VS-006",
     "cor": "Azul Marinho",
     "tamanhos_disponiveis": ["M", "G", "GG"],
     "preco": 94.9,
-    "imagem_url": "https://placehold.co/600x800/001F3F/C5A059?text=São+Miguel"
+    "imagem_url": "https://placehold.co/600x800/001F3F/C5A059?text=São+Miguel",
+    "descricao": "Camisa com estampa de São Miguel Arcanjo, ideal para quem busca proteção e estilo em uma peça de alta qualidade."
+  },
+    {
+    "id": 7,
+    "nome": "Camisa São Pio de Pietrelcina",
+    "categoria": "bem-aventurancas",
+    "material": "100% Algodão Fio 30.1 Penteado",
+    "codigo": "VS-007",
+    "cor": "Azul Marinho",
+    "tamanhos_disponiveis": ["M", "G", "GG"],
+    "preco": 91.9,
+    "imagem_url": "https://placehold.co/600x800/001F3F/C5A059?text=São+Pio",
+    "descricao": "Camisa com estampa de São Pio de Pietrelcina, ideal para quem busca proteção e estilo em uma peça de alta qualidade."
+  },
+    {
+    "id": 8,
+    "nome": "Camisa Nossa Senhora Aparecida",
+    "categoria": "mariana",
+    "material": "100% Algodão Fio 30.1 Penteado",
+    "codigo": "VS-008",
+    "cor": "Azul Marinho",
+    "tamanhos_disponiveis": ["M", "G", "GG"],
+    "preco": 94.9,
+    "imagem_url": "https://placehold.co/600x800/001F3F/C5A059?text=Nossa+Senhora",
+    "descricao": "Camisa com estampa de Nossa Senhora Aparecida, ideal para quem busca proteção e estilo em uma peça de alta qualidade."
+  },
+    {
+    "id": 9,
+    "nome": "Camisa Nossa Senhora Aparecida",
+    "categoria": "mariana",
+    "material": "100% Algodão Fio 30.1 Penteado",
+    "codigo": "VS-009",
+    "cor": "Azul Royal",
+    "tamanhos_disponiveis": ["M", "G", "GG"],
+    "preco": 94.9,
+    "imagem_url": "https://placehold.co/600x800/001F3F/C5A059?text=Nossa+Senhora",
+    "descricao": "Camisa com estampa de Nossa Senhora Aparecida, ideal para quem busca proteção e estilo em uma peça de alta qualidade."
+  },
+    {
+    "id": 10,
+    "nome": "Camisa Nossa Senhora do Perpétuo Socorro",
+    "categoria": "mariana",
+    "material": "100% Algodão Fio 30.1 Penteado",
+    "codigo": "VS-0010",
+    "cor": "Off-White",
+    "tamanhos_disponiveis": ["P", "M", "G"],
+    "preco": 79.9,
+    "imagem_url": "https://placehold.co/600x800/F9F9F9/111111?text=Nossa+Senhora+do+Perpetuo",
+    "descricao": "Camisa inspirada na devoção mariana, com estampa elegante e confortável, ideal para expressar sua fé com estilo."
+  },
+      {
+    "id": 11,
+    "nome": "Camisa São Francico de Assis",
+    "categoria": "bem-aventurancas",
+    "material": "100% Algodão Fio 30.1 Penteado",
+    "codigo": "VS-0011",
+    "cor": "Azul Marinho",
+    "tamanhos_disponiveis": ["M", "G", "GG"],
+    "preco": 91.9,
+    "imagem_url": "https://placehold.co/600x800/001F3F/C5A059?text=São+Francisco",
+    "descricao": "Camisa com estampa de São Francisco de Assis, ideal para quem busca proteção e estilo em uma peça de alta qualidade."
+  },
+    {
+    "id": 12,
+    "nome": "Camisa Santa Teresinha do Menino Jesus",
+    "categoria": "bem-aventurancas",
+    "material": "100% Algodão Fio 30.1 Penteado",
+    "codigo": "VS-0012",
+    "cor": "Azul Marinho",
+    "tamanhos_disponiveis": ["M", "G", "GG"],
+    "preco": 91.9,
+    "imagem_url": "https://placehold.co/600x800/001F3F/C5A059?text=Santa+Teresinha",
+    "descricao": "Camisa com estampa de Santa Teresinha do Menino Jesus, ideal para quem busca proteção e estilo em uma peça de alta qualidade."
+  },
+  {
+    "id": 13,
+    "nome": "Camisa Santa Rita de Cássia",
+    "categoria": "bem-aventurancas",
+    "material": "100% Algodão Fio 30.1 Penteado",
+    "codigo": "VS-0013",
+    "cor": "Azul Marinho",
+    "tamanhos_disponiveis": ["M", "G", "GG"],
+    "preco": 91.9,
+    "imagem_url": "https://placehold.co/600x800/001F3F/C5A059?text=Santa+Rita",
+    "descricao": "Camisa com estampa de Santa Rita de Cássia, ideal para quem busca proteção e estilo em uma peça de alta qualidade."
   }
 ]
