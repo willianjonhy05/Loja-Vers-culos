@@ -1,0 +1,142 @@
+/* --- PÁGINA DO CARRINHO --- */
+.cart-page {
+    background: var(--bg-primary);
+}
+
+.cart-container {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.cart-header {
+    margin-bottom: 36px;
+}
+
+.cart-header h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.15;
+    margin-bottom: 8px;
+}
+
+.cart-header .text-muted {
+    font-size: 16px;
+}
+
+.cart-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.checkout-divider {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+.checkout-total {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.checkout-form {
+    margin-top: 30px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .cart-page {
+        padding-top: 46px;
+        padding-bottom: 56px;
+    }
+
+    .cart-container {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .cart-header {
+        margin-bottom: 28px;
+    }
+
+    .cart-header h1 {
+        font-size: 2rem;
+    }
+
+    .cart-content h2 {
+        font-size: 21px;
+    }
+
+    .checkout-card {
+        padding: 24px 20px;
+        border-radius: 18px;
+    }
+
+    .checkout-total {
+        font-size: 18px;
+    }
+}
+
+/* Celulares muito estreitos */
+@media (max-width: 380px) {
+    .cart-container {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .checkout-card {
+        padding: 22px 18px;
+    }
+}
+
+
+/* --- ITENS DO CARRINHO RESPONSIVOS --- */
+.cart-item {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 14px;
+}
+
+@media (max-width: 560px) {
+    .cart-item {
+        display: grid;
+        grid-template-columns: 72px 1fr;
+        gap: 14px;
+        align-items: start;
+    }
+
+    .cart-item-img {
+        width: 72px;
+        height: 92px;
+        border-radius: 12px;
+        object-fit: cover;
+    }
+
+    .cart-item h4 {
+        font-size: 15px;
+        line-height: 1.3;
+    }
+
+    .cart-item small {
+        display: block;
+        font-size: 12px;
+        margin-top: 4px;
+        color: var(--text-muted);
+    }
+
+    .qty-controls {
+        grid-column: 1 / -1;
+        margin-top: 12px;
+        justify-content: flex-start;
+    }
+
+    .cart-item strong {
+        grid-column: 1 / -1;
+        font-size: 16px;
+        color: var(--accent-gold);
+    }
+}

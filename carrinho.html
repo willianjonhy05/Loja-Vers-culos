@@ -11,6 +11,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Seu Carrinho | Versículos</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carrinho.css">
 </head>
 
 <body>
@@ -34,40 +35,50 @@
         </div>
     </header>
 
-    <main class="container section-padding">
-        <div class="checkout-grid">
-            <div>
-                <h2>Seu Carrinho</h2>
-                <div id="cart-items-list" class="cart-list">
-                    <!-- Gerado pelo JavaScript -->
-                </div>
+    <main class="cart-page section-padding">
+        <div class="container cart-container">
+            <div class="cart-header">
+                <h1>Seu Carrinho</h1>
+                <p class="text-muted">
+                    Revise seus produtos antes de finalizar o pedido pelo WhatsApp.
+                </p>
             </div>
 
-            <div class="checkout-card">
-                <h3>Resumo do Pedido</h3>
+            <div class="checkout-grid">
+                <div class="cart-content">
+                    <h2>Produtos selecionados</h2>
 
-                <hr style="margin: 20px 0; border: 0; border-top: 1px solid #ddd;">
-
-                <div style="display: flex; justify-content: space-between; font-size: 20px; font-weight: 800;">
-                    <span>Total:</span>
-                    <span id="cart-total-value">R$ 0,00</span>
+                    <div id="cart-items-list" class="cart-list">
+                        <!-- Gerado pelo JavaScript -->
+                    </div>
                 </div>
 
-                <form id="checkout-form" style="margin-top: 30px;">
-                    <div class="form-group">
-                        <label for="cust_name">Nome Completo</label>
-                        <input type="text" id="cust_name" required placeholder="Ex: João Silva">
+                <div class="checkout-card">
+                    <h3>Resumo do Pedido</h3>
+
+                    <hr class="checkout-divider">
+
+                    <div class="checkout-total">
+                        <span>Total:</span>
+                        <span id="cart-total-value">R$ 0,00</span>
                     </div>
 
-                    <div class="form-group">
-                        <label for="cust_email">E-mail</label>
-                        <input type="email" id="cust_email" required placeholder="joao@exemplo.com">
-                    </div>
+                    <form id="checkout-form" class="checkout-form">
+                        <div class="form-group">
+                            <label for="cust_name">Nome Completo</label>
+                            <input type="text" id="cust_name" required placeholder="Ex: João Silva">
+                        </div>
 
-                    <button type="submit" class="btn-checkout">
-                        Concluir Pedido no WhatsApp
-                    </button>
-                </form>
+                        <div class="form-group">
+                            <label for="cust_email">E-mail</label>
+                            <input type="email" id="cust_email" required placeholder="joao@exemplo.com">
+                        </div>
+
+                        <button type="submit" class="btn-checkout">
+                            Concluir Pedido no WhatsApp
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
