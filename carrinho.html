@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Carrinho | Versículos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">VS</a>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="produtos.html">Coleções</a>
+                <a href="carrinho.html" class="cart-icon-wrapper">
+                    Carrinho
+                    <span id="cart-count" class="cart-badge">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section-padding">
+        <div class="checkout-grid">
+            <div>
+                <h2>Seu Carrinho</h2>
+                <div id="cart-items-list" class="cart-list">
+                    <!-- Gerado pelo JavaScript -->
+                </div>
+            </div>
+
+            <div class="checkout-card">
+                <h3>Resumo do Pedido</h3>
+
+                <hr style="margin: 20px 0; border: 0; border-top: 1px solid #ddd;">
+
+                <div style="display: flex; justify-content: space-between; font-size: 20px; font-weight: 800;">
+                    <span>Total:</span>
+                    <span id="cart-total-value">R$ 0,00</span>
+                </div>
+
+                <form id="checkout-form" style="margin-top: 30px;">
+                    <div class="form-group">
+                        <label for="cust_name">Nome Completo</label>
+                        <input type="text" id="cust_name" required placeholder="Ex: João Silva">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cust_email">E-mail</label>
+                        <input type="email" id="cust_email" required placeholder="joao@exemplo.com">
+                    </div>
+
+                    <button type="submit" class="btn-checkout">
+                        Concluir Pedido no WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

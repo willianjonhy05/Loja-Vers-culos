@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "nome": "Camisa São Bento Minimalista",
+    "material": "100% Algodão Fio 30.1 Penteado",
+    "codigo": "VS-001",
+    "cor": "Preto",
+    "tamanhos_disponiveis": ["P", "M", "G", "GG"],
+    "preco": 89.9,
+    "imagem_url": "https://placehold.co/600x800/111111/C5A059?text=São+Bento"
+  },
+  {
+    "id": 2,
+    "nome": "Camisa Totus Tuus",
+    "material": "100% Algodão Fio 30.1 Penteado",
+    "codigo": "VS-002",
+    "cor": "Off-White",
+    "tamanhos_disponiveis": ["P", "M", "G"],
+    "preco": 79.9,
+    "imagem_url": "https://placehold.co/600x800/F9F9F9/111111?text=Totus+Tuus"
+  },
+  {
+    "id": 3,
+    "nome": "Camisa Kyrie Eleison",
+    "material": "Malha Premium Lavada",
+    "codigo": "VS-003",
+    "cor": "Cinza Chumbo",
+    "tamanhos_disponiveis": ["M", "G", "GG"],
+    "preco": 84.9,
+    "imagem_url": "https://placehold.co/600x800/333333/FFFFFF?text=Kyrie+Eleison"
+  },
+  {
+    "id": 4,
+    "nome": "Camisa Sagrada Família",
+    "material": "100% Algodão Fio 30.1 Penteado",
+    "codigo": "VS-004",
+    "cor": "Branco",
+    "tamanhos_disponiveis": ["P", "M", "G", "GG"],
+    "preco": 89.9,
+    "imagem_url": "https://placehold.co/600x800/FFFFFF/111111?text=Sagrada+Familia"
+  },
+  {
+    "id": 5,
+    "nome": "Camisa Espírito Santo",
+    "material": "Penteado Especial",
+    "codigo": "VS-005",
+    "cor": "Bege Areia",
+    "tamanhos_disponiveis": ["P", "G"],
+    "preco": 79.9,
+    "imagem_url": "https://placehold.co/600x800/E5D3B3/111111?text=Divino+Espírito"
+  },
+  {
+    "id": 6,
+    "nome": "Camisa São Miguel Arcanjo",
+    "material": "100% Algodão Fio 30.1 Penteado",
+    "codigo": "VS-006",
+    "cor": "Azul Marinho",
+    "tamanhos_disponiveis": ["M", "G", "GG"],
+    "preco": 94.9,
+    "imagem_url": "https://placehold.co/600x800/001F3F/C5A059?text=São+Miguel"
+  }
+]
