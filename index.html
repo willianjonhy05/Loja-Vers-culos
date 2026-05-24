@@ -16,22 +16,24 @@
 
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="img/logo_sem_fundo_otimizada.png" width="60" alt="Logo Versículos">
+<header class="site-header">
+    <div class="container nav-container">
+        <a href="index.html" class="logo" aria-label="Página inicial da Loja Versículos">
+            <img src="img/logo_sem_fundo_otimizada.png" width="60" height="60" alt="Logo Versículos">
+        </a>
+
+        <nav class="main-nav" aria-label="Menu principal">
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Coleções</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#medidas">Medidas</a>
+            <a href="carrinho.html" class="cart-icon-wrapper">
+                <span>Carrinho</span>
+                <span id="cart-count" class="cart-badge">0</span>
             </a>
-            <nav>
-                <a href="index.html">Início</a>
-                <a href="produtos.html">Coleções</a>
-                <a href="carrinho.html" class="cart-icon-wrapper">
-                    Carrinho
-                    <span id="cart-count" class="cart-badge">0</span>
-                </a>
-            </nav>
-        </div>
-    </header>
+        </nav>
+    </div>
+</header>
 
     <main>
         <!-- Hero Section -->
@@ -178,10 +180,7 @@
         </section>
 
 
-        <div id="header-placeholder"></div> <!-- Header injetado via JS ou fixo -->
-
-
-
+        
         <!-- Como Funciona -->
         <section class="how-it-works">
             <div class="container">
@@ -219,47 +218,50 @@
                 </div>
             </div>
         </section>
+
+
+        <section class="section-padding bg-secondary" id="medidas">
+            <div class="container">
+                <h2 class="text-center">Tabela de Medidas</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tamanho</th>
+                                <th>Largura (cm)</th>
+                                <th>Comprimento (cm)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>P</td>
+                                <td>50</td>
+                                <td>68</td>
+                            </tr>
+                            <tr>
+                                <td>M</td>
+                                <td>52</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>G</td>
+                                <td>54</td>
+                                <td>72</td>
+                            </tr>
+                            <tr>
+                                <td>GG</td>
+                                <td>58</td>
+                                <td>76</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        
     </main>
 
 
-    <section class="section-padding bg-secondary" id="medidas">
-        <div class="container">
-            <h2 class="text-center">Tabela de Medidas</h2>
-            <div class="table-wrapper">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Tamanho</th>
-                            <th>Largura (cm)</th>
-                            <th>Comprimento (cm)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>P</td>
-                            <td>50</td>
-                            <td>68</td>
-                        </tr>
-                        <tr>
-                            <td>M</td>
-                            <td>52</td>
-                            <td>70</td>
-                        </tr>
-                        <tr>
-                            <td>G</td>
-                            <td>54</td>
-                            <td>72</td>
-                        </tr>
-                        <tr>
-                            <td>GG</td>
-                            <td>58</td>
-                            <td>76</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
 
 
     <footer class="footer">

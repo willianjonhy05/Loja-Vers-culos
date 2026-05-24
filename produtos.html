@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo Completo | Versículos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  <header>
-    <div class="container nav-container">
-        <a href="index.html" class="logo">
-            <img src="img/logo_sem_fundo_otimizada.png" width="60" alt="Logo Versículos">
-        </a>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="produtos.html">Coleções</a>
-            <a href="carrinho.html" class="cart-icon-wrapper">
-                Carrinho
-                <span id="cart-count" class="cart-badge">0</span>
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="Página inicial da Loja Versículos">
+                <img src="img/logo_sem_fundo_otimizada.png" width="60" height="60" alt="Logo Versículos">
             </a>
-        </nav>
-    </div>
-</header>
 
-    <main class="container section-padding">
-        <h1>Nosso Catálogo</h1>
-        <p class="text-muted">Explore nossas peças exclusivas.</p>
+            <nav class="main-nav" aria-label="Menu principal">
+                <a href="index.html">Início</a>
+                <a href="produtos.html">Coleções</a>
+                <a href="index.html#sobre">Sobre</a>
+                <a href="index.html#medidas">Medidas</a>
+                <a href="index.html#carrinho.html" class="cart-icon-wrapper">
+                    <span>Carrinho</span>
+                    <span id="cart-count" class="cart-badge">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
 
-        <div id="catalog-grid" class="product-grid"></div>
+    <main class="catalog-page section-padding">
+        <div class="container catalog-container">
+            <h1>Nosso Catálogo</h1>
+            <p class="text-muted">Explore nossas peças exclusivas.</p>
+
+            <div id="catalog-grid" class="product-grid"></div>
+        </div>
     </main>
-
-
-     <footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-grid">
 
@@ -82,4 +89,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
