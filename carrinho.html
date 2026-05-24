@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Seu Carrinho | Versículos</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header>
-        <div class="container nav-container">
-            <a href="index.html" class="logo">VS</a>
-            <nav>
-                <a href="index.html">Início</a>
-                <a href="produtos.html">Coleções</a>
-                <a href="carrinho.html" class="cart-icon-wrapper">
-                    Carrinho
-                    <span id="cart-count" class="cart-badge">0</span>
-                </a>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <div class="container nav-container">
+        <a href="index.html" class="logo">
+            <img src="img/logo_sem_fundo_otimizada.png" width="60" alt="Logo Versículos">
+        </a>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Coleções</a>
+            <a href="carrinho.html" class="cart-icon-wrapper">
+                Carrinho
+                <span id="cart-count" class="cart-badge">0</span>
+            </a>
+        </nav>
+    </div>
+</header>
 
     <main class="container section-padding">
         <div class="checkout-grid">
@@ -59,6 +64,52 @@
             </div>
         </div>
     </main>
+
+
+     <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+                    <img src="img/logo_branca_sem_fundo.png" width="100" height="100" alt="Logo Versículos">
+                    <p>Vestindo a sua devoção com elegância.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Links</h4>
+                    <a href="#inicio">Início</a>
+                    <a href="#colecoes">Coleções</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="produtos.html">Catálogo</a>
+                    <a href="carrinho.html">Carrinho</a>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p>E-mail: contato@lojaversiculos.com</p>
+                    <p>Telefone: (00) 00000-0000</p>
+                    <p>Horário: Seg. a Sex. das 8h às 18h</p>
+                    <p>Sábado: das 8h às 12h</p>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Siga-nos</h4>
+
+                    <div class="social-buttons">
+                        <a href="#" target="_blank" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" target="_blank" class="social-btn"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" target="_blank" class="social-btn"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" target="_blank" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="ano-atual"></span> Loja Versículos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
